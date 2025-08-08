@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "proteinmpnn"
+version = "1.0.0"
+requires-python = ">=3.8"
+description = "ProteinMPNN: Robust deep learning-based protein sequence design"
+authors = [
+    {name = "J. Dauparas et al.", email = ""}
+]
+license = {text = "MIT"}
+dependencies = [
+    "torch",
+    "numpy",
+]
+
+[project.urls]
+Homepage = "https://github.com/dauparas/ProteinMPNN"
+
+[tool.hatch.build.targets.wheel]
+packages = ["proteinmpnn"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
